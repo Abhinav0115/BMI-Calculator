@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+
+<body>
+    <h1 class="heading">BMI Calculator</h1>
+    <h4>Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and
+        women.<br>
+        View the BMI tables or use the tool below to compute yours.</h4>
+    <div class="container">
+        <div class="convContainer">
+            <table>
+                <header style="margin-bottom: 15px;">
+                    <div class="convbox"> Convert Imperial to Metric</div>
+                </header>
+                <tr>
+                    <td>
+                        <h4 class="word">Height:</h4>
+                    </td>
+                    <td>
+                        <input class="inpValue" type="text" name="" id="heightFeet" size="5px" placeholder="Feet"
+                            maxlength="2" minlength="1" inputmode="numeric" onkeypress="return event.charCode >= 48
+                            && event.charCode <= 57" required>
+                    </td>
+                    <td>
+                        <input class="inpValue" type="text" name="" id="heightinch" size="5px" placeholder="Inch"
+                            maxlength="2" minlength="1" inputmode="numeric" onkeypress="return event.charCode >= 48
+                            && event.charCode <= 57" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4 class="word">Weight:</h4>
+
+                    </td>
+                    <td colspan="2">
+                        <input class="inpValue" type="text" name="" id="weightpound" size="5px" placeholder="Pounds"
+                            minlength="2" required onkeypress="return event.charCode >= 48
+                            && event.charCode <= 57 || event.charCode == 46">
+                    </td>
+                </tr>
+            </table>
+            <input class="conButton" id="conBtn" type="submit" value="Convert" style="margin-top: 15px;" onclick="">
+        </div>
+        <div class="mainContainer">
+            <table>
+                <header style="margin-bottom: 15px;">
+                    <div class="calcbox"> Calculator</div>
+                </header>
+                <tr>
+                    <td>
+                        <h4 class="calcword">Height:</h4>
+                    </td>
+                    <td>
+                        <form action="" name="heightForm">
+                            <input class="calcinpValue" type="text" name="height" id="height" size="5px"
+                                placeholder="Centimeters" minlength="3" required onkeypress="return event.charCode >= 48
+                            && event.charCode <= 57 || event.charCode == 46">
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4 class="calcword">Weight:</h4>
+                    </td>
+                    <td>
+                        <form action="" name="weightForm">
+                            <input class="calcinpValue" type="text" name="weight" id="weight" placeholder="Kilograms"
+                                minlength="2" required onkeypress="return event.charCode >= 48
+                            && event.charCode <= 57 || event.charCode == 46">
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan=" 2">
+                        <button class="calcButton" id="calcBtn" type="submit">Calculate</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h4 class="outputScreen1_1">BMI: </h4>
+                    </td>
+                    <!-- <td colspan="2"><input class="outputScreen1_2" id="output1" type="" placeholder=" BMI Value"
+                            readonly></td> -->
+                    <td>
+                        <form action="" name="Calculator">
+                            <input class="display1" type="text" name="display1" id="display1" placeholder="BMI"
+                                readonly>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <form action="" name="display2">
+                        <td colspan="2"><input class="display2" id="display2" name="display2" type="" readonly></td>
+                    </form>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

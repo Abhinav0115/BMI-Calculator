@@ -1,0 +1,199 @@
+* {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+}
+
+body {
+          background-color: rgb(48, 56, 48);
+          text-align: center;
+}
+
+.heading,
+h1 {
+          font-weight: bolder;
+          text-transform: uppercase;
+          color: rgb(9, 197, 166);
+          font-size: 50px;
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+          padding: 25px;
+}
+.convbox {
+          font-weight: bolder;
+          /* text-transform: uppercase; */
+          color: rgb(197, 185, 9);
+          font-size: 18px;
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+          padding: 10px;
+}
+.calcbox {
+          font-weight: bolder;
+          /* text-transform: uppercase; */
+          color: rgb(197, 185, 9);
+          font-size: 30px;
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+          padding: 10px;
+}
+
+h4 {
+          font-weight: bolder;
+          /* text-transform: uppercase; */
+          color: rgb(197, 185, 9);
+          font-size: 20px;
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+          /* padding: 25px; */
+          margin-top: -25px;
+}
+
+.container {
+          display: flex;
+          position: relative;
+          top: 2.5em;
+}
+.convContainer {
+          left: 15%;
+          justify-content: center;
+          top: 4.5em;
+          position: absolute;
+          width: 280px;
+          height: 250px;
+          border: 1px;
+          border-style: solid;
+          border-radius: 5%;
+          background-color: #257779;
+          box-shadow: inset 0.5px 0.5px 10px rgba(255, 255, 255, 0.6),
+                    inset -3px -3px 10px rgba(0, 0, 0, 0.6);
+}
+
+.mainContainer {
+          left: 48%;
+          position: absolute;
+          width: 350px;
+          height: 420px;
+          border: 1px;
+          border-style: solid;
+          border-radius: 5%;
+          background-color: #1c6758;
+          box-shadow: inset 0.5px 0.5px 10px rgba(255, 255, 255, 0.6),
+                    inset -3px -3px 10px rgba(0, 0, 0, 0.6);
+}
+
+.calcinpValue {
+          border: 0;
+          width: 140px;
+          height: 50px;
+          border-radius: 3%;
+          margin-right: 5px;
+          margin-left: 50px;
+          margin-bottom: 20px;
+          background-color: #d6cda4;
+          font-size: 20px;
+          text-align: center;
+}
+
+.inpValue {
+          border: 0;
+          width: 70px;
+          height: 30px;
+          border-radius: 5%;
+          margin-right: 5px;
+          margin-left: 5px;
+          margin-bottom: 20px;
+          background-color: #d6cda4;
+          font-size: 18px;
+          text-align: center;
+}
+
+.inpValue:hover,
+.calcinpValue:hover,
+.calcinpValue:read-write {
+          background-color: #eef2e6;
+}
+
+.word {
+          margin-left: 18px;
+}
+
+.calcword {
+          margin-left: 40px;
+}
+
+.calcButton {
+          border: 0;
+          line-height: 2.5;
+          padding: 0 20px;
+          font-size: 1rem;
+          text-align: center;
+          color: #fff;
+          text-shadow: 1px 1px 1px #000;
+          border-radius: 10px;
+          background-color: rgba(220, 0, 0, 1);
+          background-image: linear-gradient(
+                    to top left,
+                    rgba(0, 0, 0, 0.2),
+                    rgba(0, 0, 0, 0.2) 30%,
+                    rgba(0, 0, 0, 0)
+          );
+          box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+                    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.conButton {
+          border: 0;
+          line-height: 2.5;
+          padding: 0 20px;
+          font-size: 1rem;
+          text-align: center;
+          color: #fff;
+          text-shadow: 1px 1px 1px #000;
+          border-radius: 10px;
+          background-color: rgba(220, 0, 0, 1);
+          background-image: linear-gradient(
+                    to top left,
+                    rgba(0, 0, 0, 0.2),
+                    rgba(0, 0, 0, 0.2) 30%,
+                    rgba(0, 0, 0, 0)
+          );
+          box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+                    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.conButton:hover,
+.calcButton:hover {
+          background-color: rgba(255, 0, 0, 1);
+}
+
+.conButton:active,
+.calcButton:active {
+          box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+                    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.outputScreen1_1 {
+          margin-top: 22px;
+          margin-left: 25px;
+}
+
+.display1 {
+          margin-top: 22px;
+          border-radius: 3%;
+          margin-left: 10px;
+          width: 100px;
+          height: 40px;
+          background-color: #1c6758;
+          color: #fff;
+          font-size: large;
+          text-align: center;
+}
+
+.display2 {
+          margin-top: 10px;
+          margin-left: 30px;
+          border-radius: 2%;
+          width: 270px;
+          height: 50px;
+          background-color: #1c6758;
+          color: #fff;
+          font-size: 23px;
+          text-align: center;
+}
